@@ -23,9 +23,8 @@ api = tweepy.API(auth)
 def screen():
     nb = "{}".format(i)
     print('Time to post !')
-    if s==4 or s==5:
-        filename = "/home/pi/Desktop/my_bot/screen/ep{}/{}.png".format(e, nb)
-    else:
+    
+   
         filename = "/home/pi/Desktop/my_bot/screen/ep{}/{}.jpg".format(e, nb)
     print(filename)
     api.update_with_media(filename)
